@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { Box, InputBase } from "@mui/material"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -84,6 +85,14 @@ const IndexPage = () => (
       <h1>
         Welcome to <b>Gatsby!</b>
       </h1>
+      <InputBase
+                  sx={{ flex: 1, fontSize: 14 }}
+                  placeholder="Search"
+                  onChange={() => {
+                    console.log("change");
+                  }}
+                  autoFocus
+      />
       <p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
