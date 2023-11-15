@@ -83,7 +83,7 @@ const IndexPage = () => (
       <h1>
         Welcome to <b>Gatsby!</b>
       </h1>
-      <button onClick={() => {console.log("tes-click");}}></button>
+      <button onClick={() => {console.log("tes-click");}}>Click This Button</button>
       <p className={styles.intro}>
         <b>Example pages:</b>{" "}
         {samplePageLinks.map((link, i) => (
